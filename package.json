@@ -1,0 +1,36 @@
+{
+  "name": "dsh-hindsight-panel",
+  "version": "0.5.0",
+  "license": "MIT",
+  "private": true,
+  "description": "Read-only viewer for Hindsight coding-agent memory, opened from the left sidebar as a full page: model-generated Chinese summaries, a self-check/start action, and an actionable view of queued/failed async operations",
+  "type": "module",
+  "main": "./lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "README.md",
+    "icon.svg"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-connection",
+        "@deepseek-ai/dsh-client-locale"
+      ]
+    }
+  }
+}

@@ -1,0 +1,14 @@
+# Hindsight 记忆视图面板：观测插件记录了哪些记忆、页面与文档，以及它们落在哪个目录。
+# client 半在左侧栏注册「Hindsight 记忆」入口（sidebar.panellist + main 整页，同 dsh-sleuth-canvas 的诊断画布）；
+# host 半提供 RPC：
+#   读取 ~/.hindsight/coding-agent.json（可用 HINDSIGHT_CONFIG 覆盖）、本地 daemon API 与 pg0 数据目录；
+#   「整理」页的任务操作会调用 daemon 的 operations 接口（重试 / 取消 / 删除任务记录），
+#   无需用户处理的异步任务写入 ~/.hindsight/profiles/<daemonProfile>.panel-operations.log。
+# 页面卡片的中文摘要默认走 agentDefaultModel；需要固定路由时给本行加：
+#   config:
+#     provider: <your-provider>
+#     model: <your-model>
+# 不在这里写死配置路径：默认 ~/.hindsight/coding-agent.json 与编码代理插件读取的是同一个文件。
+- insert:
+    - id: dsh-hindsight-panel
+      name: 'dsh-hindsight-panel'

@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Hindsight memory view",
+    "description": "A \"Hindsight memory\" page opened from the left sidebar as a full page (the same 诊断画布 registration shape): the five fixed pages (Component map, Core concepts, Conventions, Key decisions, Initiatives) with a Chinese summary generated for each page by the profile's default model, memory facts, session documents, and the on-disk locations of the config, logs and database. A Self-check & start action checks the memory bank and manually starts the daemon. The pending/failed counts in Memory stats link to an Operations view that lists only the async tasks that need a human decision (retry, cancel or delete the record); tasks that need no action are written to a log and are not shown. Apart from the summary request, the daemon start and those operation actions, it only reads the local Hindsight API and the ~/.hindsight files and never writes or deletes memory; when the plugin is disabled or the server is unreachable it shows an unavailable state."
+  }
+}

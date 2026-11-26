@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 36 36" role="img" aria-label="Hindsight memory view">
+  <rect x="3" y="3" width="30" height="30" rx="7" fill="#1f2a44"/>
+  <path d="M11 12.5h7.5M11 12.5v9.5M18.5 12.5l6 5.5M11 22l6-4" stroke="#8fa6d8" stroke-width="1.6" stroke-linecap="round"/>
+  <circle cx="11" cy="12.5" r="2.4" fill="#e8c46a"/>
+  <circle cx="18.5" cy="12.5" r="2.4" fill="#7fd8b0"/>
+  <circle cx="24.5" cy="18" r="2.4" fill="#9fb6e8"/>
+  <circle cx="11" cy="22" r="2.4" fill="#e8a06a"/>
+  <ellipse cx="26" cy="27" rx="5.4" ry="2" fill="#c9d6ef"/>
+  <path d="M20.6 27v2.6c0 1.1 2.4 2 5.4 2s5.4-.9 5.4-2V27" fill="#8fa6d8"/>
+  <ellipse cx="26" cy="27" rx="5.4" ry="2" fill="#dfe8f8"/>
+</svg>
